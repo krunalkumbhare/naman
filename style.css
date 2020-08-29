@@ -27,22 +27,33 @@ nav{
     margin-left: 20px;
     font-weight: 700;
 }
-#underliness{
-    position: absolute;
-    left: 61%;
-    bottom: 38%;
-    width: 370px;
-    height: 3px;
-    display: flex;
+#links a:nth-child(1){
+    margin-left: 0px;
 }
-#bl{
-    margin-left: 20px ;
-    width: 15px;
-    height: 3px;
+#line2{
+    width: 30px;
+    height: 2px;
     background-color: black;
 }
-.bl1{
-    margin-left: 0px;
+#links a:nth-child(2):hover ~#line2{
+    transform: translate(70px);
+    transition: cubic-bezier(0.19, 1, 0.22, 1);
+    transition-duration: 0.6s;
+}
+#links a:nth-child(3):hover ~#line2{
+    transform: translate(140px);
+    transition: cubic-bezier(0.19, 1, 0.22, 1);
+    transition-duration: 0.6s;
+}
+#links a:nth-child(4):hover ~#line2{
+    transform: translate(230px);
+    transition: cubic-bezier(0.19, 1, 0.22, 1);
+    transition-duration: 0.6s;
+}
+#links a:nth-child(5):hover ~#line2{
+    transform: translate(300px);
+    transition: cubic-bezier(0.19, 1, 0.22, 1);
+    transition-duration: 0.6s;
 }
 main{
     width: 100%;
